@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data: keep only tiny samples in git
+data/**
+!data/sample/
+!data/README.md
+
+# Results
+results/
+figures/
