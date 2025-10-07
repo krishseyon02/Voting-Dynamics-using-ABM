@@ -1,18 +1,32 @@
 # Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.env
+__pycache__/          # Compiled Python bytecode (.pyc) — auto-generated, not source
+*.py[cod]             # Same — caches/compiled scripts
+.venv/                # Local virtual environment (contains platform-specific binaries)
+venv/                 # Same (alternate name)
+.env                  # Local environment variables (e.g., API keys, secrets)
 
 # Jupyter
-.ipynb_checkpoints/
+.ipynb_checkpoints/   # Auto-saved notebook checkpoints (no need to version them)
 
 # Data: keep only tiny samples in git
-data/**
-!data/sample/
-!data/README.md
+data/**               # Ignore all large/raw data files
+!data/sample/         # EXCEPTION: keep small demo samples (for reproducibility)
+!data/README.md       # Keep a small explanation file in data/
 
 # Results
-results/
-figures/
+results/              # Model outputs or CSVs generated during experiments
+figures/              # Output images/plots — can be regenerated easily
+
+# OS-specific
+.DS_Store             # macOS metadata
+Thumbs.db             # Windows metadata
+
+# Logs and cache
+*.log
+__pycache__/
+*.tmp
+*.bak
+
+# Virtual environments (alt names)
+env/
+ENV/
