@@ -12,6 +12,8 @@ venv/                 # Same (alternate name)
 data/**               # Ignore all large/raw data files
 !data/sample/         # EXCEPTION: keep small demo samples (for reproducibility)
 !data/README.md       # Keep a small explanation file in data/
+# Do not track raw data files
+data/raw/
 
 # Results
 results/              # Model outputs or CSVs generated during experiments
